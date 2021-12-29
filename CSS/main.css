@@ -1,0 +1,116 @@
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Bebas Neue', cursive;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    
+}
+.nav-link{
+    margin-top: 20px;
+}
+.header{
+    height: 50px;
+    margin: 0;
+    top:0;
+    left: 0;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    background: rgb(0,0,0);
+    background: linear-gradient(346deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9304096638655462) 100%, rgba(254,21,96,0.6811099439775911) 100%);
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    text-align: center;
+}
+.welcome{
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 80px;
+    color: #fff;
+}
+.welcome:hover{
+    cursor: pointer;
+}
+.projects{
+    width: 100%;
+    height: 100vh;
+    background-color: #45567d;
+    text-align: center;
+}
+.project-header{
+    padding-top: 50px;
+    text-decoration:underline;
+}
+.project-section{
+    display: flex; 
+    border: 5px solid #0000;
+    justify-content: center;
+}
+.project-1{
+    width: 40%;
+    height: 40vh;
+    background-color: black;
+}
+.img{
+    width: 100%;
+    height: 40vh;
+}
+#project-name{
+color: #000;
+}
+.contact-section{
+    width: 100%;
+    height: 100vh;
+    background-color:#303841;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+#contact>#social-media{
+    display: flex;
+    margin-top: 150px;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-size: 60px;
+}
+#icons{
+    margin-right: 3px;
+}
+#contact-link{
+    color:black;
+}
+@media all and (max-width:500px){
+#contact>#social-media{
+    font-size: 30px;
+}
+.project-title{
+    height: 10vh;
+}
+.img{
+    height: 10vh;
+}
+}
